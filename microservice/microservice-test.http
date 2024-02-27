@@ -1,0 +1,29 @@
+### Request 1: Create a table based on the user's username
+POST http://localhost:3030/microservice/create/CCCC HTTP/1.1
+
+### Request 2: get the whole table
+GET http://localhost:3030/microservice/get/Caden HTTP/1.1
+
+### Request 3: get the specfic choice step
+GET http://localhost:3030/microservice/get/Caden?choice_step=1 HTTP/1.1
+
+### Request 4: update the table with the choice_id, prompt, and the select choice_text
+POST http://localhost:3030/microservice/update/Caden HTTP/1.1
+content-type: application/json
+
+{
+    "choice_id": "1",
+    "prompt": "As Winona settles in for the evening next to the fireplace, ready to delve into the book she brought, she hears a knock at the front door. That's strange... she's not expecting anyone.",
+    "choice_text": "Ignore it"
+}
+
+### Request 5: update the table with the choice_id, prompt, and the select choice_text
+POST http://localhost:3030/microservice/update/Caden HTTP/1.1
+content-type: application/json
+
+{
+    "choice_id": "2",
+    "prompt": "Winona remains still and quiet, hoping whoever it is will just go away. However, just as she brings her attention back to her book, the knocking continues—this time, loudly and incessantly.",
+    "choice_text": "Ignore it again"
+}
+
