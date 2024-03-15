@@ -157,4 +157,4 @@ function getTable(username) {
   ```
 
 ### UML Sequence Diagram
-![UML Sequence Diagram](![diagram](https://github.com/whitecad1228/microservice/assets/129924185/3f16bec5-01cf-4caf-8fc3-80cc7b1642a6))
+![UML Sequence Diagram](diagram.png)
